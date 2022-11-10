@@ -85,7 +85,7 @@ def main():
         st.text("Original Image")
         st.image(our_image)
 
-    if st.button("Recognise"):
+    if st.button("Mark Attendance"):
         result_img= detect_faces(our_image)
         st.image(result_img)
 
