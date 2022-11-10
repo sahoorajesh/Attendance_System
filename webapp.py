@@ -25,7 +25,7 @@ def detect_faces(our_image):
         id, uncertainty = rec.predict(gray[y:y + h, x:x + w])
         print(id, uncertainty)
 
-        if (uncertainty< 200):
+        if (uncertainty< 80):
             if (id == 1):
                 name = "Rajesh"
                 markAttendance(name)
