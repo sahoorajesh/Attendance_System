@@ -1,5 +1,4 @@
-pip install opencv-python
-pip install opencv-contrib-python
+
 import streamlit as st
 import cv2
 from PIL import Image
