@@ -62,12 +62,18 @@ def markAttendance(name):
 def main():
     """Face Recognition App"""
 
-    st.title("Streamlit Tutorial")
+    # st.title("Streamlit Tutorial")
 
     html_temp = """
     <body style="background-color:red;">
     <div style="background-color:teal ;padding:10px">
     <h2 style="color:white;text-align:center;">Face Recognition WebApp</h2>
+    <h5 style="color:white;text-align:center;">Suparna Das</h5>
+    <h5 style="color:white;text-align:center;">Anish Bhat</h5>
+    <h5 style="color:white;text-align:center;">Dashmesh Singh</h5>
+    <h5 style="color:white;text-align:center;">Adishwar Sharma</h5>
+    <h5 style="color:white;text-align:center;">Rajesh Sahoo</h5>
+
     </div>
     </body>
     """
