@@ -25,7 +25,7 @@ def detect_faces(our_image):
         id, uncertainty = rec.predict(gray[y:y + h, x:x + w])
         print(id, uncertainty)
 
-        if (uncertainty< 75):
+        if (uncertainty< 80):
             # if (id == 1):
             #     name = "Rajesh"
             #     markAttendance(name)
@@ -38,10 +38,10 @@ def detect_faces(our_image):
                 name = "Kohli"
                 markAttendance(name)
                 cv2.putText(img, name, (x, y + h), cv2.FONT_HERSHEY_COMPLEX_SMALL, 2.0, (255, 255, 255),2)
-            # if(id==7):
-            #     name = "Anish"
-            #     markAttendance(name)
-                # cv2.putText(img, name, (x, y + h), cv2.FONT_HERSHEY_COMPLEX_SMALL, 2.0, (255, 255, 255),2)
+            if(id==8):
+                name = "Dashmesh"
+                markAttendance(name)
+                cv2.putText(img, name, (x, y + h), cv2.FONT_HERSHEY_COMPLEX_SMALL, 2.0, (255, 255, 255),2)
          
             elif(id==4):
                 name = "Messi"
