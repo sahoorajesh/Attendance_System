@@ -19,7 +19,7 @@ def getImagesWithID(path):
         faces.append(faceNp)
         IDs.append(ID)
         cv2.imshow("training",faceNp)
-        cv2.waitKey(10)
+        cv2.waitKey(20)
     return np.array(IDs),faces
 
 Ids,faces=getImagesWithID(path)
