@@ -38,7 +38,7 @@ def detect_faces(our_image):
                 name = "Kohli"
                 markAttendance(name)
                 cv2.putText(img, name, (x, y + h), cv2.FONT_HERSHEY_COMPLEX_SMALL, 2.0, (255, 255, 255),2)
-            if(id==8):
+            elif(id==8):
                 name = "Dashmesh"
                 markAttendance(name)
                 cv2.putText(img, name, (x, y + h), cv2.FONT_HERSHEY_COMPLEX_SMALL, 2.0, (255, 255, 255),2)
@@ -48,6 +48,11 @@ def detect_faces(our_image):
                 markAttendance(name)
                 cv2.putText(img, name, (x, y + h), cv2.FONT_HERSHEY_COMPLEX_SMALL, 2.0, (255, 255, 255),2)
 
+            elif(id==10):
+                name = "Adishwar"
+                markAttendance(name)
+                cv2.putText(img, name, (x, y + h), cv2.FONT_HERSHEY_COMPLEX_SMALL, 2.0, (255, 255, 255),2)
+        else:
             cv2.putText(img, name, (x, y + h), cv2.FONT_HERSHEY_COMPLEX_SMALL, 2.0, (255, 255, 255),2)
 
 
