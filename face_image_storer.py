@@ -12,7 +12,7 @@ while(True):
     faces = detector.detectMultiScale(gray, 1.3, 5)
     for (x,y,w,h) in faces:
         cv2.rectangle(img,(x,y),(x+w,y+h),(255,0,0),2)
-        
+        print(x,y,w,h)
         #saving the captured face in the dataset folder
         cv2.imwrite("dataSet/User."+Id +'.'+ str(sampleNum) + ".jpg", gray[y:y+h,x:x+w])
         sampleNum=sampleNum+1
